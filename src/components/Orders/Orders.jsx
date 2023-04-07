@@ -38,7 +38,7 @@ const Orders = () => {
                 handleClearCart = {handleClearCart}
                 >
                     
-                    <Link to="/checkout"> <button>Proceed Checkout</button> </Link>
+                    <Link to="/checkout"> <button className='btn-proceed'>Proceed Checkout</button> </Link>
                 </Cart>
 
             </div>
