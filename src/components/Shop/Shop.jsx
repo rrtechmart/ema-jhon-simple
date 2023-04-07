@@ -24,12 +24,12 @@ const Shop = () => {
             const addedProduct = products.find(product => product.id === id)
             if(addedProduct){
                 // step-3: add quantity
-                const quantity = addedProduct[id];
+                const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
                 // step-4: add the added product to the saved cart
                 savedCart.push(addedProduct);
             }
-            console.log('added product', addedProduct)
+            // console.log('added product', addedProduct)
         }
         // step-5: set the cart
         setCart(savedCart);
